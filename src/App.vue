@@ -17,7 +17,7 @@ export default {
       searchResults.value.splice(topVideoIndex, 1, previousVideo)
     }
     const searchVideo = () => {
-      search({ apiKey: 'AIzaSyACLAZ3zc-_kk_RXmEXrTev1tPuHFrHSJE', query: searchQuery.value }).then((res) => {
+      search({ apiKey: 'API_KEY_HERE', query: searchQuery.value }).then((res) => {
 
         searchResults.value = res.data.items;
         topVideo.value = res.data.items[0];
